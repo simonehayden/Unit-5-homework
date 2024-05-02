@@ -7,6 +7,19 @@ def number_prompt():
         return user_number
       else:
         print("try agian!")
+        
+     while True: 
+
+      user_number_plus_one = user_number + 1
+      user_number_two=int(input(f"enter a number between {user_number_plus_one} and 30: "))
+      if user_number_plus_one <= user_number_two <= 30:
+        print("You entered the number:", user_number_two)
+        return user_number_two
+      else:
+        print("try agian!")
+   
+
+
     
 
 def problem_three():

@@ -2,13 +2,14 @@ def number_prompt():
 
     while True: 
       user_number= int(input("enter a number between between 5 and 12 (inclusive): "))
-      if 5 <= user_number <= 12:
-        print("You entered the number:", user_number)
-        return user_number
-      else:
+      if user_number < 5 or user_number > 12:
         print("try agian!")
-        
-     while True: 
+        continue
+      else:
+         print("You entered the number:", user_number)
+      break
+
+    while True: 
 
       user_number_plus_one = user_number + 1
       user_number_two=int(input(f"enter a number between {user_number_plus_one} and 30: "))
@@ -17,26 +18,35 @@ def number_prompt():
         return user_number_two
       else:
         print("try agian!")
-   
-
-
     
 
 def problem_three():
-    # put the code for problem 3 here
-    print()
+    for i in range(4):
+        print("****")
 
 def problem_four():
-    # put the code for problem 4 here
-    print()
-
+    for i in range(7):
+        print("*****")
+        
+    
 def problem_five():
-    # put the code for problem 5 here
-    print()
+   for i in range(5):
+       print("*******")
 
 def fizz_buzz():
-    # put the code for extra problem here
-    print()
+    number:(int(input("enter a number: ")
+    for i in range(1,number + 1):
+        if i % 3 == 0 and i % 5:
+            print ("FizzBuzz")
+        elif i % 3 == 0:
+            print("Fizz")
+        elif i % 5:
+            print("Buzz")
+        else:
+            print(i)
+                
+        
+    
 
 
 def main():

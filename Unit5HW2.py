@@ -1,3 +1,10 @@
+'''
+Name: Simone Hayden
+Date: 5/6/24
+Assignment: Unit 5 Homework 2
+'''
+
+
 def number_prompt():
       while True: 
           user_number= int(input("enter a number between between 5 and 12 (inclusive): "))
